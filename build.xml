@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="iem" basedir="." default="deploy">
+    <property name="warfile" value="iem"/>
+    <target name="unpack">
+       <unwar src="${warfile}.war" dest="${warfile}" />
+    </target>
+	
+	<target name="remove">
+		<delete file="C:\Users\devel2\workspace\iem\iem.war" />
+		<delete dir="C:\Users\devel2\Documents\apache-tomcat-7.0.47\webapps\iem" />
+		<delete file="C:\Users\devel2\Documents\apache-tomcat-7.0.47\webapps\iem.war" />
+	</target>
+	
+    <target name="create">
+        <war destfile="${warfile}.war" update="true" webxml="WebContent/WEB-INF/web.xml">
+            <classes dir="build\classes"/>
+            <fileset dir="WebContent">
+                <exclude name="WEB-INF/web.xml"/>
+            </fileset>
+        </war>
+    </target>
+    <target name="copy">
+        <copy todir="C:\Users\devel2\Documents\apache-tomcat-7.0.47\webapps" overwrite="true">
+            <fileset dir=".">
+                <include name="*.war"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="deploy">
+    	<antcall target="remove" />
+        <antcall target="create"/>
+        <antcall target="copy"/>
+    </target>
+</project>
