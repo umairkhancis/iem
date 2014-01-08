@@ -18,9 +18,11 @@
 		</div>
 	</c:if>
 
-	<form action="userLogin" method="post">
-		Username: <input name="username" id="username" type="text" required="required" /> <br />
-		Password: <input name="password" id="password" type="password" />
+	<form name='f' action="<c:url value='/j_spring_security_check' />"
+		method='POST'>
+		
+		Username: <input name="j_username" id="username" type="text" required="required" /> <br />
+		Password: <input name="j_password" id="password" type="password" />
 		<input type="submit" value="login"/>
 	</form>
 	<a href="signUp.jsp" >Sign Up</a> <br>

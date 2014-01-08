@@ -15,19 +15,19 @@ public class UserController {
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String login() {
-		return "login";
+		return "user/login";
 	}
 	
 	@RequestMapping(value = "/logout", method = RequestMethod.GET)
 	public String logout() {
-		return "login";
+		return "user/login";
 	}
 	
 	@RequestMapping(value="/loginfailed", method = RequestMethod.GET)
 	public String loginerror(ModelMap model) {
  
 		model.addAttribute("error", "true");
-		return "login";
+		return "user/login";
  
 	}
 	
