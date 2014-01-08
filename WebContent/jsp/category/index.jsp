@@ -7,13 +7,13 @@
 <title>Category</title>
 <script type="text/javascript" src="/iem/scripts/jquery-2.0.3.min.js"></script>
 <script type="text/javascript" src="/iem/scripts/jquery.jqGrid-4.5.4/src/grid.locale-en.js"></script>
-<script type="text/javascript" src="/iem/scripts/jquery.jqGrid-4.5.4/js/jquery.jqGrid.min.js"></script>
+<script type="text/javascript" src="/iem/scripts/jquery.jqGrid-4.5.4/js/jquery.jqGrid.src.js"></script>
 <script type="text/javascript" src="/iem/scripts/script.js"></script>
 <link rel="stylesheet" type="text/css" href="/iem/scripts/jquery.jqGrid-4.5.4/css/ui.jqgrid.css">
 <link rel="stylesheet" type="text/css" href="/iem/css/jquery-ui-1.10.3.custom.min.css">
 </head>
 <body>
-   <h2>Category</h2>
+   <h2>Categories</h2>
    	<table id="grid"></table>
 	<div id="pager"></div>
 	
