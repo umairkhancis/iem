@@ -1,4 +1,4 @@
-package com.netpace.iem.umair.ws;
+package com.netpace.iem.umair.ws.soap;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;

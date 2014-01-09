@@ -4,6 +4,6 @@
   version="2.0">
   <endpoint
       name="HelloWorld"
-      implementation="com.netpace.iem.umair.ws.HelloWorldImpl"
+      implementation="com.netpace.iem.umair.ws.soap.HelloWorldImpl"
       url-pattern="/hello"/>
 </endpoints>

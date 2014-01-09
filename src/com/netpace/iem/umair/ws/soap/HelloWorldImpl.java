@@ -1,10 +1,10 @@
-package com.netpace.iem.umair.ws;
+package com.netpace.iem.umair.ws.soap;
 
 import javax.jws.WebService;
 
 //Service Implementation Bean
 
-@WebService(endpointInterface = "com.netpace.iem.umair.ws.HelloWorld")
+@WebService(endpointInterface = "com.netpace.iem.umair.ws.soap.HelloWorld")
 public class HelloWorldImpl implements HelloWorld{
 
 	@Override
